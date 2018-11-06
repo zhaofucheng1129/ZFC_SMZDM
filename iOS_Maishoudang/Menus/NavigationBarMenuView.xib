@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavigationBarMenuView" customModule="iOS_Maishoudang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="165"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haowu_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="zHd-c1-pn2">
+                    <rect key="frame" x="70" y="0.0" width="16" height="8"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FuL-YT-Zmb">
+                    <rect key="frame" x="0.0" y="8" width="96" height="157"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LBy-k6-2HF">
+                            <rect key="frame" x="0.0" y="0.0" width="96" height="157"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="iN0-l3-epB" id="NZ8-nz-zMd"/>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="OiL-Nu-T4t"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="LBy-k6-2HF" secondAttribute="bottom" id="chZ-A3-ku8"/>
+                        <constraint firstAttribute="trailing" secondItem="LBy-k6-2HF" secondAttribute="trailing" id="gdQ-74-eeX"/>
+                        <constraint firstItem="LBy-k6-2HF" firstAttribute="leading" secondItem="FuL-YT-Zmb" secondAttribute="leading" id="kKH-0Q-BJW"/>
+                        <constraint firstItem="LBy-k6-2HF" firstAttribute="top" secondItem="FuL-YT-Zmb" secondAttribute="top" id="rxs-qz-NeH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FuL-YT-Zmb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="40t-ph-Aez"/>
+                <constraint firstAttribute="bottom" secondItem="FuL-YT-Zmb" secondAttribute="bottom" id="DxP-Q8-3rc"/>
+                <constraint firstAttribute="trailing" secondItem="FuL-YT-Zmb" secondAttribute="trailing" id="MIl-Yx-9aP"/>
+                <constraint firstAttribute="trailing" secondItem="zHd-c1-pn2" secondAttribute="trailing" constant="10" id="WNc-kP-GY6"/>
+                <constraint firstItem="FuL-YT-Zmb" firstAttribute="top" secondItem="zHd-c1-pn2" secondAttribute="bottom" id="bwf-aK-8dJ"/>
+                <constraint firstItem="zHd-c1-pn2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="euo-TX-Nut"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="background" destination="FuL-YT-Zmb" id="HoD-gf-B71"/>
+                <outlet property="tableView" destination="LBy-k6-2HF" id="ETs-39-zN2"/>
+            </connections>
+            <point key="canvasLocation" x="-813" y="60"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="haowu_arrow" width="16" height="8"/>
+    </resources>
+</document>

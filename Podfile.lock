@@ -1,0 +1,216 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlibabaAuthSDK (1.1.0.32):
+    - BCUserTrack
+    - mtop
+    - SecurityGuardSDK
+    - SGMain
+    - SGSecurityBody
+  - AlibcLinkPartnerSDK (1.1.1.2):
+    - UTDID
+  - AlibcTradeSDK (3.1.1.206):
+    - AlibabaAuthSDK
+    - AlibcLinkPartnerSDK
+    - AlipaySDK (= 2.0.0-bc)
+    - BCUserTrack
+    - mtop
+    - SecurityGuardSDK
+    - SGMain
+    - TUnionTradeSDK
+  - AlipaySDK (2.0.0-bc)
+  - BCUserTrack (5.1.0.9):
+    - UTDID
+  - DeviceKit (1.7.0)
+  - DZNEmptyDataSet (1.8.1)
+  - FDStackView (1.0.1)
+  - IQKeyboardManagerSwift (6.1.1)
+  - JCore (1.2.1)
+  - JPush (3.1.0):
+    - JCore (~> 1.2.0)
+  - JXPhotoBrowser (1.4.0):
+    - JXPhotoBrowser/Kingfisher (= 1.4.0)
+  - JXPhotoBrowser/Core (1.4.0)
+  - JXPhotoBrowser/Kingfisher (1.4.0):
+    - JXPhotoBrowser/Core
+    - Kingfisher
+  - KeychainAccess (3.1.1)
+  - Kingfisher (4.8.1)
+  - MJRefresh (3.1.15.3)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.2):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - mtop (2.0.3):
+    - SecurityGuardSDK
+    - SGMain
+    - SGSecurityBody
+  - PKHUD (5.1.0)
+  - pop (1.0.10)
+  - Result (3.2.4)
+  - RxCocoa (4.2.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.2.0)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SecurityGuardSDK (5.1.94)
+  - SGMain (5.1.94):
+    - SecurityGuardSDK (= 5.1.94)
+  - SGSecurityBody (5.1.29):
+    - SecurityGuardSDK (>= 5.1.94)
+    - SGMain (>= 5.1.94)
+  - SnapKit (4.0.0)
+  - SwifterSwift (4.4.0):
+    - SwifterSwift/AppKit (= 4.4.0)
+    - SwifterSwift/CoreGraphics (= 4.4.0)
+    - SwifterSwift/CoreLocation (= 4.4.0)
+    - SwifterSwift/Foundation (= 4.4.0)
+    - SwifterSwift/MapKit (= 4.4.0)
+    - SwifterSwift/SpriteKit (= 4.4.0)
+    - SwifterSwift/SwiftStdlib (= 4.4.0)
+    - SwifterSwift/UIKit (= 4.4.0)
+  - SwifterSwift/AppKit (4.4.0)
+  - SwifterSwift/CoreGraphics (4.4.0)
+  - SwifterSwift/CoreLocation (4.4.0)
+  - SwifterSwift/Foundation (4.4.0)
+  - SwifterSwift/MapKit (4.4.0)
+  - SwifterSwift/SpriteKit (4.4.0)
+  - SwifterSwift/SwiftStdlib (4.4.0)
+  - SwifterSwift/UIKit (4.4.0)
+  - TUnionTradeSDK (1.3.3)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+  - UMCAnalytics (5.5.0):
+    - UMCCommon
+  - UMCCommon (1.5.2)
+  - UMCCommonLog (1.0.0)
+  - UMCShare/Core (6.9.4):
+    - UMCCommon
+  - UMCShare/Social/ReducedQQ (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedSina (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UTDID (1.1.0.16)
+  - ZSSRichTextEditor (0.5.2.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.2)
+  - AlibcTradeSDK
+  - DeviceKit (~> 1.3)
+  - DZNEmptyDataSet
+  - FDStackView
+  - IQKeyboardManagerSwift
+  - JPush
+  - JXPhotoBrowser
+  - KeychainAccess
+  - MJRefresh
+  - Moya/RxSwift (~> 11.0)
+  - PKHUD (~> 5.0)
+  - pop
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SDCycleScrollView (~> 1.75)
+  - SnapKit (~> 4.0.0)
+  - SwifterSwift
+  - "UITableView+FDTemplateLayoutCell"
+  - UMCAnalytics
+  - UMCCommon
+  - UMCCommonLog
+  - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedSina
+  - UMCShare/Social/ReducedWeChat
+  - ZSSRichTextEditor
+
+SPEC REPOS:
+  http://repo.baichuan-ios.taobao.com/baichuanSDK/AliBCSpecs.git:
+    - AlibabaAuthSDK
+    - AlibcLinkPartnerSDK
+    - AlibcTradeSDK
+    - AlipaySDK
+    - BCUserTrack
+    - mtop
+    - SecurityGuardSDK
+    - SGMain
+    - SGSecurityBody
+    - TUnionTradeSDK
+    - UTDID
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DeviceKit
+    - DZNEmptyDataSet
+    - FDStackView
+    - IQKeyboardManagerSwift
+    - JCore
+    - JPush
+    - JXPhotoBrowser
+    - KeychainAccess
+    - Kingfisher
+    - MJRefresh
+    - Moya
+    - PKHUD
+    - pop
+    - Result
+    - RxCocoa
+    - RxSwift
+    - SDCycleScrollView
+    - SDWebImage
+    - SnapKit
+    - SwifterSwift
+    - "UITableView+FDTemplateLayoutCell"
+    - UMCAnalytics
+    - UMCCommon
+    - UMCCommonLog
+    - UMCShare
+    - ZSSRichTextEditor
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlibabaAuthSDK: b5d7c1964f195c1182d9410e3158c469d25876fa
+  AlibcLinkPartnerSDK: 3308e1bccf0776a28bb697f0da6e1befe029ee12
+  AlibcTradeSDK: 7a17d15eb13182a6e96aeab0c73b6d4d2bc5b00a
+  AlipaySDK: a40a4099b24328d90d7ba4fb67f6ce753d7fa2c7
+  BCUserTrack: 684f468b8143be7a2ed10a8c449fd959b2a3a099
+  DeviceKit: 6a5bdeb103c03757bb94aef1ccb01e08bc8ef4ee
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FDStackView: fc0697e5be2022c8af36ce66e9e2061006058ba8
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  JCore: 467b5b56bd367c548f88ee1b5794d94ee07ab319
+  JPush: 5921e25ad13e0386351079217b009f2039084eac
+  JXPhotoBrowser: b014aef984f69b4d52e846c5bc682cad4ff4d156
+  KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  mtop: 1513ec32f69174bd7c95a07d393f26ef1cad3af7
+  PKHUD: 62ea46a1e88c4def1da784878d199bb54c841e3c
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SecurityGuardSDK: 05f6d782189160f2b23b731eed5cb314ce584855
+  SGMain: 8a3008d8a709259d4868f78ae3265659e58e4416
+  SGSecurityBody: 098c981416d0f04faa605642e2da3bb556419f73
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwifterSwift: 1ce0e31801ddd3a2bd3256626275425adb01067a
+  TUnionTradeSDK: 4d49ba32bb2a87dd3fcc644a80b0cd0d706a1e0b
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  UMCAnalytics: 4667788559a72f2fa5077117d1b8802a3b6eb6bb
+  UMCCommon: 4392868ac47ff1b101663106bb114ba616fabbad
+  UMCCommonLog: 05a2d5de21858e3d870551562cff405c1366d244
+  UMCShare: aa233aecad67979930fe43f3a2f676023b669439
+  UTDID: c28855683c5ea2e77e597cb14609328f7d470d6e
+  ZSSRichTextEditor: 56ed060d6d7a98fb6be9fceb8074ced22160349b
+
+PODFILE CHECKSUM: 9c2ad04c32401facb1b0c3a5980c5f7adafe27f1
+
+COCOAPODS: 1.5.3

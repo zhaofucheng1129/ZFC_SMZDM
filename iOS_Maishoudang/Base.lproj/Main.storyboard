@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vn6-UE-2dS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="aiR-kS-Sd2">
+            <objects>
+                <viewController id="PIU-OK-oHM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xNk-Yz-Ifw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ese-h5-JeB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MHe-Iz-m9J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUa-zZ-Cli">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="vn6-UE-2dS" kind="embed" id="Amw-nM-FDa"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AUa-zZ-Cli" secondAttribute="trailing" id="8Sd-6D-QVK"/>
+                            <constraint firstItem="AUa-zZ-Cli" firstAttribute="top" secondItem="MHe-Iz-m9J" secondAttribute="top" id="8kv-x0-msr"/>
+                            <constraint firstItem="AUa-zZ-Cli" firstAttribute="leading" secondItem="MHe-Iz-m9J" secondAttribute="leading" id="NQS-qh-6FU"/>
+                            <constraint firstAttribute="bottom" secondItem="AUa-zZ-Cli" secondAttribute="bottom" id="pKj-QP-vHm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BQ7-PN-2u9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2305" y="1278"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="CVz-iu-L8u">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vn6-UE-2dS" customClass="MSDTabBarViewController" customModule="iOS_Maishoudang" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mjm-qo-Th2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Olf-kM-2dW" kind="relationship" relationship="viewControllers" id="nGb-8C-s9y"/>
+                        <segue destination="XyU-HK-abG" kind="relationship" relationship="viewControllers" id="5iu-wb-mHc"/>
+                        <segue destination="dwu-aU-Y53" kind="relationship" relationship="viewControllers" id="0Sc-4X-K36"/>
+                        <segue destination="mPw-sv-9dP" kind="relationship" relationship="viewControllers" id="jFR-ej-XYj"/>
+                        <segue destination="66a-pI-wWT" kind="relationship" relationship="viewControllers" id="FLD-vP-IqW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3lX-J9-NRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1310" y="1278"/>
+        </scene>
+        <!--Controller-->
+        <scene sceneID="O5m-lu-cbm">
+            <objects>
+                <navigationController id="mPw-sv-9dP" customClass="MSDNavigationController" customModule="iOS_Maishoudang" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ojf-NB-Em1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eJF-FW-YLR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <outlet property="delegate" destination="33a-1M-DAs" id="DSh-3W-MXJ"/>
+                        <segue destination="KBk-R9-Gz9" kind="relationship" relationship="rootViewController" id="Nvr-fS-Pci"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpF-5O-Eud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="33a-1M-DAs" customClass="MSDNavigationControllerDelegate" customModule="iOS_Maishoudang" customModuleProvider="target">
+                    <connections>
+                        <outlet property="percent" destination="2Ug-dF-wUU" id="hzz-Z4-JUB"/>
+                    </connections>
+                </customObject>
+                <customObject id="2Ug-dF-wUU" customClass="PercentDrivenTransition" customModule="iOS_Maishoudang" customModuleProvider="target">
+                    <connections>
+                        <outlet property="controller" destination="mPw-sv-9dP" id="PJN-wa-OYH"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="265" y="1155"/>
+        </scene>
+        <!--Article View Controller-->
+        <scene sceneID="C7T-5f-KKb">
+            <objects>
+                <viewController id="KBk-R9-Gz9" customClass="ArticleViewController" customModule="iOS_Maishoudang" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dgm-5Q-YVc"/>
+                        <viewControllerLayoutGuide type="bottom" id="jEn-JN-kXw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dY1-2e-3eC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ShD-0C-X4M"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showSearchBar" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXG-vb-Dby" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1220" y="1155"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="3lt-AI-zsX">
+            <objects>
+                <viewController id="TTQ-sq-IuE" customClass="MainViewController" customModule="iOS_Maishoudang" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1lP-tp-wZc"/>
+                        <viewControllerLayoutGuide type="bottom" id="lZi-6n-uhG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jjk-Hv-4ao">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kNU-WL-gHk"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showSearchBar" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QZF-dD-Y5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1220" y="1851"/>
+        </scene>
+        <!--Controller-->
+        <scene sceneID="B1E-ev-pVM">
+            <objects>
+                <navigationController id="66a-pI-wWT" customClass="MSDNavigationController" customModule="iOS_Maishoudang" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="521-BI-kdd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B91-tt-DfU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <outlet property="delegate" destination="RrF-bE-WNo" id="vDd-XO-Iy7"/>
+                        <segue destination="TTQ-sq-IuE" kind="relationship" relationship="rootViewController" id="Ygy-ed-MET"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPC-ym-6J8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="RrF-bE-WNo" customClass="MSDNavigationControllerDelegate" customModule="iOS_Maishoudang" customModuleProvider="target">
+                    <connections>
+                        <outlet property="percent" destination="sTx-7y-9Ht" id="pIK-on-X80"/>
+                    </connections>
+                </customObject>
+                <customObject id="sTx-7y-9Ht" customClass="PercentDrivenTransition" customModule="iOS_Maishoudang" customModuleProvider="target">
+                    <connections>
+                        <outlet property="controller" destination="66a-pI-wWT" id="0cv-ab-CRz"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="265" y="1851"/>
+        </scene>
+        <!--Controller-->
+        <scene sceneID="SRN-kc-M8e">
+            <objects>
+                <navigationController id="dwu-aU-Y53" customClass="MSDNavigationController" customModule="iOS_Maishoudang" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="r52-1l-g2c"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uKi-yA-tM6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <outlet property="delegate" destination="5kb-Kb-nMC" id="KtD-8Z-UbN"/>
+                        <segue destination="PwA-GB-gXr" kind="relationship" relationship="rootViewController" id="y1g-vL-a39"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhu-la-Oot" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="5kb-Kb-nMC" customClass="MSDNavigationControllerDelegate" customModule="iOS_Maishoudang" customModuleProvider="target">
+                    <connections>
+                        <outlet property="percent" destination="AI0-Mr-nus" id="7mf-4o-9NX"/>
+                    </connections>
+                </customObject>
+                <customObject id="AI0-Mr-nus" customClass="PercentDrivenTransition" customModule="iOS_Maishoudang" customModuleProvider="target">
+                    <connections>
+                        <outlet property="controller" destination="dwu-aU-Y53" id="XdB-mq-12W"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="265" y="458"/>
+        </scene>
+        <!--Good Price View Controller-->
+        <scene sceneID="4go-OW-met">
+            <objects>
+                <viewController id="PwA-GB-gXr" customClass="GoodPriceViewController" customModule="iOS_Maishoudang" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TYS-3M-Thl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qwg-Bh-1ab"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gen-Iv-9z2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fc7-hd-Vmp"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showSearchBar" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70G-8K-IPH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="457"/>
+        </scene>
+        <!--Controller-->
+        <scene sceneID="dtG-Bg-sCw">
+            <objects>
+                <navigationController id="XyU-HK-abG" customClass="MSDNavigationController" customModule="iOS_Maishoudang" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="65L-3f-DOR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5VX-sn-jke">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <outlet property="delegate" destination="axE-Tf-Gkr" id="syD-U6-IqO"/>
+                        <segue destination="O9O-Ze-wet" kind="relationship" relationship="rootViewController" id="f5x-Pa-MRJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0T5-wv-vaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="axE-Tf-Gkr" customClass="MSDNavigationControllerDelegate" customModule="iOS_Maishoudang" customModuleProvider="target">
+                    <connections>
+                        <outlet property="percent" destination="RtC-2t-Nqf" id="627-kQ-lha"/>
+                    </connections>
+                </customObject>
+                <customObject id="RtC-2t-Nqf" customClass="PercentDrivenTransition" customModule="iOS_Maishoudang" customModuleProvider="target">
+                    <connections>
+                        <outlet property="controller" destination="XyU-HK-abG" id="18f-mK-3HW"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="265" y="-235"/>
+        </scene>
+        <!--Goods View Controller-->
+        <scene sceneID="CB1-ER-L1c">
+            <objects>
+                <viewController id="O9O-Ze-wet" customClass="GoodsViewController" customModule="iOS_Maishoudang" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dN4-Ev-A5h"/>
+                        <viewControllerLayoutGuide type="bottom" id="ccQ-gc-KCM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2M2-3z-I9I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MaV-qn-hvK"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showSearchBar" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rt2-AI-IPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="-235"/>
+        </scene>
+        <!--Controller-->
+        <scene sceneID="18H-ID-C8e">
+            <objects>
+                <navigationController id="Olf-kM-2dW" customClass="MSDNavigationController" customModule="iOS_Maishoudang" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" id="DY6-UI-KIE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1A5-Ql-WZl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <outlet property="delegate" destination="bjX-Pk-Lpy" id="nBh-rh-6xV"/>
+                        <segue destination="nt0-bY-Z3h" kind="relationship" relationship="rootViewController" id="om7-OR-Bn0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfs-4K-GKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="bjX-Pk-Lpy" customClass="MSDNavigationControllerDelegate" customModule="iOS_Maishoudang" customModuleProvider="target">
+                    <connections>
+                        <outlet property="percent" destination="NvB-a6-ZRJ" id="tJ4-wE-su1"/>
+                    </connections>
+                </customObject>
+                <customObject id="NvB-a6-ZRJ" customClass="PercentDrivenTransition" customModule="iOS_Maishoudang" customModuleProvider="target">
+                    <connections>
+                        <outlet property="controller" destination="Olf-kM-2dW" id="qh5-01-5gW"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="266" y="-910"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="cfV-dz-BVN">
+            <objects>
+                <viewController id="nt0-bY-Z3h" customClass="HomeViewController" customModule="iOS_Maishoudang" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wDA-qF-ROg"/>
+                        <viewControllerLayoutGuide type="bottom" id="xng-8g-a1s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4vD-Ur-EZb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lb2-De-sVk"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showSearchBar" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="88k-bW-06Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216.8" y="-911.69415292353835"/>
+        </scene>
+    </scenes>
+</document>

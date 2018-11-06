@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MainHeaderTableViewCell" rowHeight="176" id="KGk-i7-Jjw" customClass="MainHeaderTableViewCell" customModule="iOS_Maishoudang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="468" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="468" height="175.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGq-k5-BF5">
+                        <rect key="frame" x="0.0" y="0.0" width="468" height="180"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user_cover" translatesAutoresizingMaskIntoConstraints="NO" id="rV8-3l-Wb4">
+                                <rect key="frame" x="10" y="0.0" width="448" height="180"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sfv-10-3gi">
+                                <rect key="frame" x="0.0" y="0.0" width="468" height="180"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Fgd-no-CWs">
+                                    <rect key="frame" x="0.0" y="0.0" width="468" height="180"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_user_cover" translatesAutoresizingMaskIntoConstraints="NO" id="dzU-JG-rqN">
+                                            <rect key="frame" x="12" y="80" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="7Mm-dt-JkZ"/>
+                                                <constraint firstAttribute="height" constant="60" id="uHr-o4-VyO"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="值友6049453453" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L04-z8-2ge">
+                                            <rect key="frame" x="80" y="88" width="141.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金币：120枚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9p-o4-mLp">
+                                            <rect key="frame" x="80" y="117" width="69.5" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="1lX-A6-fy9">
+                                            <rect key="frame" x="449" y="123.5" width="7" height="13"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dzU-JG-rqN" firstAttribute="centerY" secondItem="Fgd-no-CWs" secondAttribute="centerY" constant="20" id="4eM-ap-rGD"/>
+                                        <constraint firstItem="L04-z8-2ge" firstAttribute="leading" secondItem="dzU-JG-rqN" secondAttribute="trailing" constant="8" id="AvP-Ly-oZF"/>
+                                        <constraint firstItem="z9p-o4-mLp" firstAttribute="top" secondItem="L04-z8-2ge" secondAttribute="bottom" constant="8" id="Nd9-Mp-Vwy"/>
+                                        <constraint firstItem="dzU-JG-rqN" firstAttribute="leading" secondItem="Fgd-no-CWs" secondAttribute="leading" constant="12" id="Nqj-tv-QOC"/>
+                                        <constraint firstItem="z9p-o4-mLp" firstAttribute="leading" secondItem="L04-z8-2ge" secondAttribute="leading" id="P0w-nB-KoK"/>
+                                        <constraint firstAttribute="trailing" secondItem="1lX-A6-fy9" secondAttribute="trailing" constant="12" id="g1K-UP-1CS"/>
+                                        <constraint firstItem="1lX-A6-fy9" firstAttribute="centerY" secondItem="dzU-JG-rqN" secondAttribute="centerY" constant="20" id="gCm-xr-Syu"/>
+                                        <constraint firstItem="L04-z8-2ge" firstAttribute="top" secondItem="dzU-JG-rqN" secondAttribute="top" constant="8" id="tiX-8z-9H1"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sfv-10-3gi" secondAttribute="trailing" id="75w-3P-T7T"/>
+                            <constraint firstAttribute="trailing" secondItem="rV8-3l-Wb4" secondAttribute="trailing" constant="10" id="CYN-bH-Eut"/>
+                            <constraint firstAttribute="height" constant="180" id="GLA-BQ-Fg9"/>
+                            <constraint firstAttribute="bottom" secondItem="sfv-10-3gi" secondAttribute="bottom" id="WFd-Bw-gt5"/>
+                            <constraint firstItem="sfv-10-3gi" firstAttribute="leading" secondItem="VGq-k5-BF5" secondAttribute="leading" id="agf-8U-Fi3"/>
+                            <constraint firstItem="sfv-10-3gi" firstAttribute="top" secondItem="VGq-k5-BF5" secondAttribute="top" id="fkm-t1-2lx"/>
+                            <constraint firstItem="rV8-3l-Wb4" firstAttribute="leading" secondItem="VGq-k5-BF5" secondAttribute="leading" constant="10" id="hNP-39-P8Z"/>
+                            <constraint firstItem="rV8-3l-Wb4" firstAttribute="top" secondItem="VGq-k5-BF5" secondAttribute="top" id="jJi-jT-eCE"/>
+                            <constraint firstAttribute="bottom" secondItem="rV8-3l-Wb4" secondAttribute="bottom" id="oCi-qW-iuK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VGq-k5-BF5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2Kp-qD-YEH"/>
+                    <constraint firstAttribute="bottom" secondItem="VGq-k5-BF5" secondAttribute="bottom" priority="250" id="Xvi-tx-6By"/>
+                    <constraint firstAttribute="trailing" secondItem="VGq-k5-BF5" secondAttribute="trailing" id="eOK-ek-NDu"/>
+                    <constraint firstItem="VGq-k5-BF5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nM2-dM-gTA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backgroundImage" destination="rV8-3l-Wb4" id="OwP-AU-s4c"/>
+                <outlet property="userImage" destination="dzU-JG-rqN" id="LzY-kb-p2w"/>
+                <outlet property="userName" destination="L04-z8-2ge" id="1mg-wy-Sy5"/>
+            </connections>
+            <point key="canvasLocation" x="-479" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_arrow" width="7" height="13"/>
+        <image name="icon_user_cover" width="66" height="66"/>
+    </resources>
+</document>

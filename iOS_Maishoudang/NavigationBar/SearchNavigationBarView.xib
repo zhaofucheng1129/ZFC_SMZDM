@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchNavigationBarView" customModule="iOS_Maishoudang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5re-Vf-BAD">
+                    <rect key="frame" x="5" y="8" width="45" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="DHP-uJ-lgL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <state key="normal" title="分类">
+                        <color key="titleColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rl-es-arp">
+                    <rect key="frame" x="325" y="11" width="45" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="waj-pS-Sxt"/>
+                    </constraints>
+                    <state key="normal" image="SM_Detail_hjmore"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afs-xw-HWT">
+                    <rect key="frame" x="55" y="6" width="265" height="32"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_input" translatesAutoresizingMaskIntoConstraints="NO" id="9q1-RO-C8z">
+                            <rect key="frame" x="8" y="9" width="14" height="14"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入搜索内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xt-zJ-oEf">
+                            <rect key="frame" x="32" y="7.5" width="86" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.80000000000000004" green="0.79607843137254897" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vri-B9-ki3">
+                            <rect key="frame" x="0.0" y="0.0" width="265" height="32"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vri-B9-ki3" secondAttribute="bottom" id="5fD-mV-n3n"/>
+                        <constraint firstItem="9xt-zJ-oEf" firstAttribute="centerY" secondItem="afs-xw-HWT" secondAttribute="centerY" id="GUa-cV-Gt3"/>
+                        <constraint firstItem="9q1-RO-C8z" firstAttribute="centerY" secondItem="afs-xw-HWT" secondAttribute="centerY" id="fCt-3E-IkL"/>
+                        <constraint firstItem="vri-B9-ki3" firstAttribute="leading" secondItem="afs-xw-HWT" secondAttribute="leading" id="rlc-jf-NuE"/>
+                        <constraint firstItem="vri-B9-ki3" firstAttribute="top" secondItem="afs-xw-HWT" secondAttribute="top" id="rv9-Rz-Njq"/>
+                        <constraint firstAttribute="trailing" secondItem="vri-B9-ki3" secondAttribute="trailing" id="t8f-hq-pyn"/>
+                        <constraint firstItem="9xt-zJ-oEf" firstAttribute="leading" secondItem="9q1-RO-C8z" secondAttribute="trailing" constant="10" id="uoS-JE-Mae"/>
+                        <constraint firstItem="9q1-RO-C8z" firstAttribute="leading" secondItem="afs-xw-HWT" secondAttribute="leading" constant="8" id="zHf-Y3-Hv2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5re-Vf-BAD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="17x-Mv-fRB"/>
+                <constraint firstItem="afs-xw-HWT" firstAttribute="leading" secondItem="5re-Vf-BAD" secondAttribute="trailing" constant="5" id="48f-Sy-zg0"/>
+                <constraint firstItem="afs-xw-HWT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="AwF-R0-scd"/>
+                <constraint firstAttribute="trailing" secondItem="6Rl-es-arp" secondAttribute="trailing" constant="5" id="Eac-lc-2fZ"/>
+                <constraint firstItem="6Rl-es-arp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="a6R-xL-scH"/>
+                <constraint firstAttribute="bottom" secondItem="afs-xw-HWT" secondAttribute="bottom" constant="6" id="buS-mX-biZ"/>
+                <constraint firstItem="6Rl-es-arp" firstAttribute="leading" secondItem="afs-xw-HWT" secondAttribute="trailing" constant="5" id="laM-D8-32M"/>
+                <constraint firstItem="5re-Vf-BAD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="xuA-MH-tzH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="categoryBtn" destination="5re-Vf-BAD" id="vg8-XN-zww"/>
+                <outlet property="moreBtn" destination="6Rl-es-arp" id="tK8-vj-q2x"/>
+                <outlet property="searchBtn" destination="vri-B9-ki3" id="FdV-dJ-19l"/>
+                <outlet property="searchContainer" destination="afs-xw-HWT" id="Nl9-QP-Vsv"/>
+            </connections>
+            <point key="canvasLocation" x="-59.5" y="-256"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SM_Detail_hjmore" width="16" height="16"/>
+        <image name="search_input" width="14" height="14"/>
+    </resources>
+</document>

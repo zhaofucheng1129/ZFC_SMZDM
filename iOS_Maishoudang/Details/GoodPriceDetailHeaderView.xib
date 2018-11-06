@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GoodPriceDetailHeaderView" customModule="iOS_Maishoudang" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFQ-tJ-No3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BURBERRY 博柏利 周末男士香水 30ml" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIR-v1-11T">
+                            <rect key="frame" x="16" y="45" width="343" height="53"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                            <color key="textColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易考拉 | 15:26 | 爆料人：黄大屁是我的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zaf-2C-egy">
+                            <rect key="frame" x="16" y="14" width="343" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNh-G0-ou6" userLabel="bottomLine">
+                            <rect key="frame" x="16" y="147" width="343" height="1"/>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="3du-2y-3a1"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99元包邮包税（用券）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vug-yx-OVN">
+                            <rect key="frame" x="16" y="112.5" width="343" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" red="0.8980392157" green="0.31764705879999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RNh-G0-ou6" firstAttribute="trailing" secondItem="Zaf-2C-egy" secondAttribute="trailing" id="0gw-XF-aC4"/>
+                        <constraint firstItem="vug-yx-OVN" firstAttribute="trailing" secondItem="Zaf-2C-egy" secondAttribute="trailing" id="Blw-E9-4ud"/>
+                        <constraint firstItem="jIR-v1-11T" firstAttribute="top" secondItem="Zaf-2C-egy" secondAttribute="bottom" constant="14" id="C7q-q9-UTW"/>
+                        <constraint firstItem="jIR-v1-11T" firstAttribute="leading" secondItem="Zaf-2C-egy" secondAttribute="leading" id="E4Q-kk-IHX"/>
+                        <constraint firstItem="vug-yx-OVN" firstAttribute="leading" secondItem="Zaf-2C-egy" secondAttribute="leading" id="Mgu-zZ-oFE"/>
+                        <constraint firstItem="jIR-v1-11T" firstAttribute="trailing" secondItem="Zaf-2C-egy" secondAttribute="trailing" id="PzM-3q-54Z"/>
+                        <constraint firstItem="Zaf-2C-egy" firstAttribute="top" secondItem="KFQ-tJ-No3" secondAttribute="top" constant="14" id="XSK-aq-zG5"/>
+                        <constraint firstItem="RNh-G0-ou6" firstAttribute="leading" secondItem="Zaf-2C-egy" secondAttribute="leading" id="bnm-fS-Pog"/>
+                        <constraint firstItem="RNh-G0-ou6" firstAttribute="leading" secondItem="KFQ-tJ-No3" secondAttribute="leading" constant="16" id="fOx-lp-DRC"/>
+                        <constraint firstItem="vug-yx-OVN" firstAttribute="top" secondItem="jIR-v1-11T" secondAttribute="bottom" constant="14" id="gYn-XL-cU8"/>
+                        <constraint firstAttribute="trailing" secondItem="RNh-G0-ou6" secondAttribute="trailing" constant="16" id="jks-TT-VqA"/>
+                        <constraint firstAttribute="bottom" secondItem="RNh-G0-ou6" secondAttribute="bottom" id="pLh-HA-2tD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KFQ-tJ-No3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O5Q-if-c8J"/>
+                <constraint firstAttribute="trailing" secondItem="KFQ-tJ-No3" secondAttribute="trailing" id="Sve-wr-fEP"/>
+                <constraint firstAttribute="bottom" secondItem="KFQ-tJ-No3" secondAttribute="bottom" id="gal-iB-umu"/>
+                <constraint firstItem="KFQ-tJ-No3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iX4-Pz-zxa"/>
+                <constraint firstItem="KFQ-tJ-No3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lom-Kj-OmV"/>
+                <constraint firstAttribute="trailing" secondItem="KFQ-tJ-No3" secondAttribute="trailing" id="yZi-O5-spp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="shortTitleLabel" destination="vug-yx-OVN" id="af7-FG-Fmn"/>
+                <outlet property="sourceLabel" destination="Zaf-2C-egy" id="l4Q-yB-bXe"/>
+                <outlet property="titleLabel" destination="jIR-v1-11T" id="11F-6s-X9e"/>
+            </connections>
+            <point key="canvasLocation" x="-381.5" y="320"/>
+        </view>
+    </objects>
+</document>
