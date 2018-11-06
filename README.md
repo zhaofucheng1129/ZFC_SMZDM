@@ -20,3 +20,5 @@
 使用RxSwift绑定视图上的事件和网络请求
 
 使用Alamofire+Moya/RxSwift+Codable轻松从Json转到Model
+
+集成友盟和微博、微信、QQ分享等功能
