@@ -3,7 +3,7 @@
 
 ## 截图
 
-![](Simulator Screen Shot - iPhone XR - 2018-11-06 at 10.40.05.png)
+![pic1](pic1.png)
 
 
 
